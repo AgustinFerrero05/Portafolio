@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Mi Portfolio</title>
+        <meta name="description" content="Portafolio profesional de Omar Santos, 5 años de experiencia como desarrollador de software.">
+        <meta name="theme-color" content="#007bff">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/jpg" href="imagen/foto.jpg">
+        <link rel="stylesheet" href="css/style.css">
+
+        
+    </head>
+    <body>
+        <header>
+            <h1>David Pérez</h1>
+            <p>Desarrollador Full Stack</p>
+            <nav>
+                <a class="link" href="#habilidades">Habilidades</a>
+                <a class="link" href="#experiencia">Experiencia</a>
+                <a class="link" href="#proyectos">Proyectos</a>
+                <a class="link" href="#contacto">Formulario de contacto</a>
+            </nav>
+            <button id="mode-toggle" onclick="toggleDarkMode()">Modo Oscuro</button>
+        </header>
+        <main>
+            <div class="foto-contenedor">
+                <img src="imagen/foto.jpg">
+                <p ><strong> Soy David Pérez, desarrollador de software con una profunda pasión por la tecnología y la innovación. Mi enfoque se centra en la creación de soluciones eficientes y la resolución de problemas complejos. Me especializo en el desarrollo web, aplicaciones móviles, así como en el backend y frontend. Además, tengo experiencia en inteligencia artificial. Siempre estoy en búsqueda de nuevos desafíos que me permitan seguir aprendiendo y evolucionando profesionalmente.
+    
+                </strong></p>
+            </div>
+
+            <section>
+                <h2 id="habilidades">Habilidades</h2>
+                
+                    <article>
+                       
+                            <h3>Habilidades técnicas (Hard Skills)</h3>
+                                <ul>
+                                    <li><p>Lenguajes de programación: JavaScript, Python, Java, C#</p></li>
+                                    <li><p>Desarrollo web: HTML, CSS, React, Angular, Vue.js</p></li>
+                                    <li><p>Desarrollo backend: Node.js, Django, Spring Boot, .NET</p></li>
+                                    <li><p>Bases de datos: MySQL, PostgreSQL, MongoDB, Firebase</p></li>
+                                    <li><p>Control de versiones: Git, GitHub, GitLab</p></li>
+                                    <li><p>Metodologías ágiles: Scrum, Kanban</p></li>
+                                    <li><p>Seguridad informática: Prácticas de código seguro, autenticación, cifrado</p></li>
+                                    <li><p>Pruebas y depuración: Jest, Selenium, JUnit, debugging avanzado</p></li>
+                                    <li><p>Desarrollo móvil: Flutter, React Native, Swift, Kotlin</p></li>
+                                    <li><p>DevOps y despliegue: Docker, Kubernetes, CI/CD, AWS, Firebase</p></li>
+                                </ul>
+                            </li>
+                            
+                    </article>
+                    <article>
+                        <h3>Habilidades blandas (Soft Skills)</h3>
+                        <ul>
+                            <li><p>Resolución de problemas</p></li>
+                            <li><p>Trabajo en equipo</p></li>
+                            <li><p>Pensamiento lógico</p></li>
+                            <li><p>Comunicación</p></li>
+                            <li><p>Adaptabilidad</p></li>
+                            <li><p>Gestión del tiempo</p></li>
+                        </ul>
+                    
+                    </article>
+        </section>
+                
+                        
+           <section>    
+               <h2 id="experiencia">Experiencia</h2>
+            
+                        
+              <ul>
+                    <li><h3>Desarrollador Full Stack - Infinity Code Labs</h3></li>
+                    <p>Fecha: 2023-Actualidad</p>
+                    <p>Responsabilidades y logros: Desarrollar y mantener aplicaciones web full stack con tecnologías modernas, incluyendo React y Node.js.</p>
+                       
+            
+                    
+                    
+            
+                
+                    <li><h3>Desarrollador Backend - SoftWave Technologies</h3></li>
+                    <p>Fecha: 2021-2023</p>
+                    <p>Responsabilidades y logros: Trabajé en el desarrollo de servicios backend usando tecnologías como Node.js y bases de datos SQL.</p>
+              </ul>
+            </section>
+            <section>
+               <h2 id="proyectos">Proyectos</h2>
+            
+                
+                <ul>
+                    <li><h3>Plataforma E-commerce</h3></li>
+                    <p>Desarrollo completo de un sistema de ventas online con carrito, pasarela de pagos e integración de API de envío.</p>
+                    <p>Tecnologías: React, Node.js, MongoDB, Stripe API</p>
+                    
+                
+                    
+                    <li><h3>Aplicación de Gestión de Tareas</h3></li>
+                    <p>Aplicación móvil y web para gestión de proyectos, con autenticación y notificaciones en tiempo real.</p>
+                    <p>Tecnologías: React Native, Firebase, Express</p>
+                    
+                
+            </section>
+            
+            <section>
+                <h2 id="contacto">Formulario de contacto</h2>
+                <form method="post" action="/">
+                    <fieldset>
+                        <legend>Información personal</legend>
+                           <div>
+                              <label for="name">Nombre:</label>
+                              <input type="text" id="name" name="name" placeholder="Omar Santos" required>
+                            </div>
+                            <div>
+                               <label for="email">Email:</label>
+                               <input type="email" id="email" name="email" placeholder="OmarSantos05@gmail.com" required>
+                            </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Información adicional</legend>
+                           <div>
+                                <label for="phone">Telefono:</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+54 3978123424"pattern="[+0-9\s]{8,15}" title="Número telefónico con prefijo internacional.">
+                            </div>
+                            <div>
+                                <label for="mensaje">Mensaje:</label>
+                                <input type="text" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí...">
+                            </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Otros</legend>
+                        <div>
+                            <label for="why">Motivo por el cual se contacta</label>
+                            <select name="why" id="why">
+                                <option value="1">Trabajo</option>
+                                <option value="2">Duda</option>
+                                <option value="3">Mas información</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <input type="submit" value="Enviar contacto">
+                    </div>
+                        
+        
+                </form>
+            </section>
+            
+            <footer>
+                    <p>Sígueme en:</p>
+                    <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <p> &copy; 2025 David Pérez</p>
+            </footer>
+            
+            
+            <script>
+                // Función para alternar el modo oscuro
+                function toggleDarkMode() {
+                    document.body.classList.toggle('dark-mode');
+            
+                    // Guardar la preferencia en localStorage
+                    if (document.body.classList.contains("dark-mode")) {
+                        localStorage.setItem("modo-oscuro", "activado");
+                    } else {
+                        localStorage.setItem("modo-oscuro", "desactivado");
+                    }
+                }
+            
+                // Aplicar la preferencia guardada al cargar la página
+                window.onload = function() {
+                    if (localStorage.getItem("modo-oscuro") === "activado") {
+                        document.body.classList.add("dark-mode");
+                    }
+                };
+            </script>
+            
+
+        </main>
+    </body>
+    
+</html>
